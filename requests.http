@@ -1,0 +1,20 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzE2MTIwNDJ9.zqJCIEWx8tjfa-tjDBCbvy3pOOg1A_lkOHqFAXTIZCY
+
+{
+  "name": "Randy Yiv",
+  "email": "randyyiv@gmail.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### sessions create
+
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
